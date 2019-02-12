@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A9F16D7-0AC2-48B9-8958-8899D382DCE2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SimulatorUI</RootNamespace>
+    <AssemblyName>SimulatorUI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DrawableTrafficLight.cs" />
+    <Compile Include="DrawableCar.cs" />
+    <Compile Include="DrawableCarManager.cs" />
+    <Compile Include="DrawableTrafficLightsManager.cs" />
+    <Compile Include="DrawingArea.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DrawingArea.Designer.cs">
+      <DependentUpon>DrawingArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDrawable.cs" />
+    <Compile Include="ImageManager.cs" />
+    <Compile Include="Logic\Car.cs" />
+    <Compile Include="Logic\Joint.cs" />
+    <Compile Include="Logic\Lane.cs" />
+    <Compile Include="Logic\LinkedList.cs" />
+    <Compile Include="Logic\LinkedListEnumerator.cs" />
+    <Compile Include="Logic\Node.cs" />
+    <Compile Include="Logic\Program.cs" />
+    <Compile Include="Logic\Road.cs" />
+    <Compile Include="Logic\Slot.cs" />
+    <Compile Include="Logic\Subscribable.cs" />
+    <Compile Include="Logic\TrafficLight.cs" />
+    <Compile Include="Logic\TrafficLightController.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DrawingArea.resx">
+      <DependentUpon>DrawingArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\BlueCarMovingDown.png" />
+    <Content Include="Images\BlueCarMovingLeft.png" />
+    <Content Include="Images\BlueCarMovingRight.png" />
+    <Content Include="Images\BlueCarMovingUp.png" />
+    <Content Include="Images\PoliceCarMovingDown.png" />
+    <Content Include="Images\PoliceCarMovingLeft.png" />
+    <Content Include="Images\PoliceCarMovingRight.png" />
+    <Content Include="Images\PoliceCarMovingUp.png" />
+    <Content Include="Images\PurpleCarMovingDown.png" />
+    <Content Include="Images\PurpleCarMovingLeft.png" />
+    <Content Include="Images\PurpleCarMovingRight.png" />
+    <Content Include="Images\PurpleCarMovingUp.png" />
+    <Content Include="Images\Strada4.png" />
+    <Content Include="Images\TrafficLightDownGreen.png" />
+    <Content Include="Images\TrafficLightDownRed.png" />
+    <Content Include="Images\TrafficLightDownYellow.png" />
+    <Content Include="Images\TrafficLightLeftGreen.png" />
+    <Content Include="Images\TrafficLightLeftRed.png" />
+    <Content Include="Images\TrafficLightLeftYellow.png" />
+    <Content Include="Images\TrafficLightRightGreen.png" />
+    <Content Include="Images\TrafficLightRightRed.png" />
+    <Content Include="Images\TrafficLightRightYellow.png" />
+    <Content Include="Images\TrafficLightUpGreen.png" />
+    <Content Include="Images\TrafficLightUpRed.png" />
+    <Content Include="Images\TrafficLightUpYellow.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

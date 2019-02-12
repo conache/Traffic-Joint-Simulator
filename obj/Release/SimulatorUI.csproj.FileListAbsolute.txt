@@ -1,0 +1,10 @@
+C:\workspace\fmi\master\sem1\progPar&Conc\SimulatorUI\SimulatorUI\bin\Release\SimulatorUI.exe.config
+C:\workspace\fmi\master\sem1\progPar&Conc\SimulatorUI\SimulatorUI\bin\Release\SimulatorUI.exe
+C:\workspace\fmi\master\sem1\progPar&Conc\SimulatorUI\SimulatorUI\bin\Release\SimulatorUI.pdb
+C:\workspace\fmi\master\sem1\progPar&Conc\SimulatorUI\SimulatorUI\obj\Release\SimulatorUI.DrawingArea.resources
+C:\workspace\fmi\master\sem1\progPar&Conc\SimulatorUI\SimulatorUI\obj\Release\SimulatorUI.MainForm.resources
+C:\workspace\fmi\master\sem1\progPar&Conc\SimulatorUI\SimulatorUI\obj\Release\SimulatorUI.Properties.Resources.resources
+C:\workspace\fmi\master\sem1\progPar&Conc\SimulatorUI\SimulatorUI\obj\Release\SimulatorUI.csproj.GenerateResource.cache
+C:\workspace\fmi\master\sem1\progPar&Conc\SimulatorUI\SimulatorUI\obj\Release\SimulatorUI.csproj.CoreCompileInputs.cache
+C:\workspace\fmi\master\sem1\progPar&Conc\SimulatorUI\SimulatorUI\obj\Release\SimulatorUI.exe
+C:\workspace\fmi\master\sem1\progPar&Conc\SimulatorUI\SimulatorUI\obj\Release\SimulatorUI.pdb
